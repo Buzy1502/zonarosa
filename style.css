@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: linear-gradient(rgba(5, 10, 5, 0.10), rgba(90, 40, 90, 0.80)), url(./assets/fondonav5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    color: rgb(205, 50, 148);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.containernav {
+    width: 100%;
+    background-image: linear-gradient(rgba(5, 10, 5, 0.10), rgba(90, 40, 90, 0.80));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 70px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(162, 20, 98);
+    font-family: Roboto, "sans-serif";
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+.navbar ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: rgb(205, 50, 148);
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: 0.4s ease-out;
+}
+
+.navbar ul li:hover::before {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+    transition: all 0.3s;
+ 
+}
+
+img:hover {
+  transform: scale(1.3);
+  z-index: 2;
+
+}
+
+.row {
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.column {
+        flex: 20%;
+        padding: 5px;
+    }
+    
+.column img {
+        margin-top: 5px;
+        flex-shrink: 1;
+    }
+
+
+@media (max-width:800px) {
+    .column {
+        flex: 50%;
+        padding: 5px;
+    }
+}
+
+@media (max-width:600px) {
+    .column {
+        flex: 100%;
+        padding: 5px;
+    }
+
+}
+
+.container-fluid {
+    
+    text-transform: capitalize;
+}
+
+footer.pie__de__pagina i.fab, i.fa-brands {
+    color: rgb(122, 31, 98);
+    font-size: 45px;
+    margin-top: 15px;
+
+}
+
+.pie__de__pagina {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    min-width: 100%;
+    margin-top: 20px;
+    background-color: rgb(187, 108, 145);
+}
+
+.pie__de__pagina .redes {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie__de__pagina .redes .redes__ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 50px;
+    transition: all 400ms;
+}
+
+.pie__de__pagina .redes .redes__ul>li:hover {
+    transform: scale(0.8, 0.8);
+    border-bottom: 3px solid #9d1c65bb;
+}
+
+.listado-precios {
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: x-large;
+   min-height: 500px;
+   line-height: 2.5;
+
+}
