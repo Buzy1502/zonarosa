@@ -32,11 +32,10 @@
 
     <main>
         <section class="mx-2 mt-5" id="nosotros">
-            <div>
+            <h2>zona rosa</h2>
 
-                <h2>zona rosa</h2>
-
-                <p>Centro de manicura en Quito
+            <div class="contenedor-perfil">
+                <p class="perfil-texto">Centro de manicura en Quito
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt accusantium perspiciatis quidem
                     dolorum quibusdam provident facilis dicta culpa earum odio, soluta id facere recusandae eligendi
                     magni et aliquam aliquid eum
@@ -48,6 +47,7 @@
                     architecto libero, itaque tenetur quaerat eos distinctio obcaecati!
 
                 </p>
+                <img class="perfil-foto" src="./assets/perfilyela.jpg" alt="yela">
 
             </div>
         </section>
@@ -67,38 +67,59 @@
                     <div class="column">
                         <img alt="foto5" src="./assets/foto5.jpg">
                         <img alt="foto6" src="./assets/foto6.jpg" />
-                        <img alt="foto7" src="./assets/foto7.jpg" />
-                        <img alt="foto8" src="./assets/foto8.jpg" />
+                     <img alt="foto8" src="./assets/foto8.jpg" />
+                     <img alt="foto9" src="./assets/foto9.jpg">
                     </div>
 
                     <div class="column">
-                        <img alt="foto9" src="./assets/foto9.jpg">
-                        <img alt="foto10" src="./assets/foto10.jpg" />
+                        
                         <img alt="foto11" src="./assets/foto11.jpg" />
                         <img alt="foto12" src="./assets/foto12.jpg" />
+                        <img alt="foto14" src="./assets/foto14.jpg" />
+                        <img alt="foto15" src="./assets/foto15.jpg" />
                     </div>
 
                     <div class="column">
-                        <img alt="foto13" src="./assets/foto13.jpg">
-                        <img alt="foto14" src="./assets/foto14.jpg" />
-                        <img alt="foto15" src="./assets/foto15.jpg" />
-                        <img alt="foto16" src="./assets/foto16.jpg" />
-                    </div>
-                    <div class="column">
-                        <img alt="foto17" src="./assets/foto17.jpg">
-                        <img alt="foto18" src="./assets/foto18.jpg" />
+                        
+                      <img alt="foto16" src="./assets/foto16.jpg" />
+                      <img alt="foto18" src="./assets/foto18.jpg" />
                         <img alt="foto19" src="./assets/foto19.jpg" />
                         <img alt="foto20" src="./assets/foto20.jpg" />
                     </div>
-
-
+                    
                 </div>
-
             </div>
+
+        <section>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/carrusel1.jpg" class="d-block w-100" alt="carrusel1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/carrusel2.jpg" class="d-block w-100" alt="carrusel2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/carrusel3.jpg" class="d-block w-100" alt="carrusel3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/carrusel4.jpg" class="d-block w-100" alt="carrusel4">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
         </section>
 
-        <section class="mx-2 mb-3" id="servicios">
-            <h2 class="text-center">servicios</h2>
+        <section class="mx-2 mb-2" id="servicios">
+            <h2 class="text-center mt-5">servicios</h2>
             <div class="listado-precios">
 
                 <table class="ms-5">
@@ -133,27 +154,34 @@
                 </table>
             </div>
         </section>
-
-        <footer id="contacto" class="pie__de__pagina container-fluid">
-            <div class="redes">
-                <ul class="redes__ul">
-                    <li class="footer__icono icono-instagram">
-                        <a href="https://www.instagram.com/salonzonarosa/" class="footer__link" target="_blank"><i
-                                class="fab fa-instagram"></i></a>
-                    </li>
-                    <li class="footer__icono icono-whatsapp">
-                        <a href="https://wa.me/593985798127?text=Hola,me gustaría agendar un turno."
-                            class="footer__link" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                    </li>
-                    <li class="footer__icono icono-facebook">
-                        <a href="https://www.facebook.com/search/top?q=zona%20rosa%20by%3A%20yela%20rodriguez"
-                            class="footer__link" target="_blank"><i class="fab fa-facebook"></i></a>
-                    </li>
-
-                </ul>
-            </div>
-        </footer>
+ 
     </main>
+
+    <footer id="contacto" class="pie__de__pagina container-fluid py-5">
+        <h2 class="text-center">contacto</h2>
+
+
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7830051553024!2d-78.51669878473896!3d-0.2410694354482029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d599e6cbb1c413%3A0x2f209cf81f44314f!2sZona%20Rosa!5e0!3m2!1ses-419!2sar!4v1672356112365!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="redes">
+            <ul class="redes__ul">
+                <li class="footer__icono icono-instagram">
+                    <a href="https://www.instagram.com/salonzonarosa/" class="footer__link" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                </li>
+                <li class="footer__icono icono-whatsapp">
+                    <a href="https://wa.me/593985798127?text=Hola,me gustaría agendar un turno."
+                        class="footer__link" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </li>
+                <li class="footer__icono icono-facebook">
+                    <a href="https://www.facebook.com/search/top?q=zona%20rosa%20by%3A%20yela%20rodriguez"
+                        class="footer__link" target="_blank"><i class="fab fa-facebook"></i></a>
+                </li>
+
+            </ul>
+        </div>
+        
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

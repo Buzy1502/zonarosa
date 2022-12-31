@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -6,16 +6,40 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(5, 10, 5, 0.10), rgba(90, 40, 90, 0.80)), url(./assets/fondonav5.jpg);
+    /* background-image: linear-gradient(rgba(5, 10, 5, 0.10), rgba(90, 40, 90, 0.80)), url(./assets/fondonav5.jpg); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: rgb(212, 172, 191);
 }
 
 h2 {
-    color: rgb(205, 50, 148);
+    color: rgb(202, 124, 174);
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.contenedor-perfil {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-height: 350px;
+    overflow-y: hidden;
+}
+
+.perfil-texto {
+    text-align: justify;
+    background-color: rgb(209, 185, 196);
+    flex: 50%;
+    min-height: 350px;
+    padding: 10px 5px;
+    line-height: 27px;
+}
+
+.perfil-foto {
+    flex: 50%;
+    max-height: 350px;
+    border-radius: 0;
 }
 
 
@@ -78,12 +102,6 @@ img {
     border-radius: 5px;
     display: block;
     transition: all 0.3s;
- 
-}
-
-img:hover {
-  transform: scale(1.3);
-  z-index: 2;
 
 }
 
@@ -94,14 +112,14 @@ img:hover {
 }
 
 .column {
-        flex: 20%;
-        padding: 5px;
-    }
-    
+    flex: 20%;
+    padding: 5px;
+}
+
 .column img {
-        margin-top: 5px;
-        flex-shrink: 1;
-    }
+    margin-top: 5px;
+    flex-shrink: 1;
+}
 
 
 @media (max-width:800px) {
@@ -119,16 +137,37 @@ img:hover {
 
 }
 
+.carousel-inner img {
+    width: 100%;
+    max-height: 460px;
+}
+
+.carousel-inner {
+    height: 450px;
+}
+
+
 .container-fluid {
-    
+
     text-transform: capitalize;
 }
 
-footer.pie__de__pagina i.fab, i.fa-brands {
-    color: rgb(122, 31, 98);
+.listado-precios {
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    min-height: 500px;
+    line-height: 2.5;
+}
+
+footer.pie__de__pagina i.fab,
+i.fa-brands {
+    color: rgb(146, 30, 115);
     font-size: 45px;
     margin-top: 15px;
-
 }
 
 .pie__de__pagina {
@@ -137,22 +176,24 @@ footer.pie__de__pagina i.fab, i.fa-brands {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 80px;
     min-width: 100%;
-    margin-top: 20px;
-    background-color: rgb(187, 108, 145);
+    margin-top: 70px;
+    background-color: rgb(210, 153, 172);
+    column-gap: 50px;
 }
+
+
 
 .pie__de__pagina .redes {
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
 }
 
 .pie__de__pagina .redes .redes__ul {
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -164,16 +205,4 @@ footer.pie__de__pagina i.fab, i.fa-brands {
 .pie__de__pagina .redes .redes__ul>li:hover {
     transform: scale(0.8, 0.8);
     border-bottom: 3px solid #9d1c65bb;
-}
-
-.listado-precios {
-    color: white;
-    text-transform: uppercase;
-    display: flex;
-   justify-content: center;
-   align-items: center;
-   font-size: x-large;
-   min-height: 500px;
-   line-height: 2.5;
-
 }
